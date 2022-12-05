@@ -2,14 +2,14 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "baseRTS Win64 Debug Build",
+			"label": "topDownExampleCPP Win64 Debug Build",
 			"group": "build",
 			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
-				"baseRTS",
+				"topDownExampleCPP",
 				"Win64",
 				"Debug",
-				"C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\baseRTS.uproject",
+				"C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\topDownExampleCPP.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -19,19 +19,19 @@
 			}
 		},
 		{
-			"label": "baseRTS Win64 Debug Rebuild",
+			"label": "topDownExampleCPP Win64 Debug Rebuild",
 			"group": "build",
 			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
-				"baseRTS",
+				"topDownExampleCPP",
 				"Win64",
 				"Debug",
-				"C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\baseRTS.uproject",
+				"C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\topDownExampleCPP.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"baseRTS Win64 Debug Clean"
+				"topDownExampleCPP Win64 Debug Clean"
 			],
 			"type": "shell",
 			"options": {
@@ -39,14 +39,14 @@
 			}
 		},
 		{
-			"label": "baseRTS Win64 Debug Clean",
+			"label": "topDownExampleCPP Win64 Debug Clean",
 			"group": "build",
 			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
-				"baseRTS",
+				"topDownExampleCPP",
 				"Win64",
 				"Debug",
-				"C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\baseRTS.uproject",
+				"C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\topDownExampleCPP.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -56,14 +56,14 @@
 			}
 		},
 		{
-			"label": "baseRTS Win64 DebugGame Build",
+			"label": "topDownExampleCPP Win64 DebugGame Build",
 			"group": "build",
 			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
-				"baseRTS",
+				"topDownExampleCPP",
 				"Win64",
 				"DebugGame",
-				"C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\baseRTS.uproject",
+				"C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\topDownExampleCPP.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -73,19 +73,19 @@
 			}
 		},
 		{
-			"label": "baseRTS Win64 DebugGame Rebuild",
+			"label": "topDownExampleCPP Win64 DebugGame Rebuild",
 			"group": "build",
 			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
-				"baseRTS",
+				"topDownExampleCPP",
 				"Win64",
 				"DebugGame",
-				"C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\baseRTS.uproject",
+				"C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\topDownExampleCPP.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"baseRTS Win64 DebugGame Clean"
+				"topDownExampleCPP Win64 DebugGame Clean"
 			],
 			"type": "shell",
 			"options": {
@@ -93,14 +93,14 @@
 			}
 		},
 		{
-			"label": "baseRTS Win64 DebugGame Clean",
+			"label": "topDownExampleCPP Win64 DebugGame Clean",
 			"group": "build",
 			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
-				"baseRTS",
+				"topDownExampleCPP",
 				"Win64",
 				"DebugGame",
-				"C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\baseRTS.uproject",
+				"C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\topDownExampleCPP.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -110,14 +110,14 @@
 			}
 		},
 		{
-			"label": "baseRTS Win64 Development Build",
+			"label": "topDownExampleCPP Win64 Development Build",
 			"group": "build",
 			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
-				"baseRTS",
+				"topDownExampleCPP",
 				"Win64",
 				"Development",
-				"C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\baseRTS.uproject",
+				"C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\topDownExampleCPP.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -127,19 +127,19 @@
 			}
 		},
 		{
-			"label": "baseRTS Win64 Development Rebuild",
+			"label": "topDownExampleCPP Win64 Development Rebuild",
 			"group": "build",
 			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
-				"baseRTS",
+				"topDownExampleCPP",
 				"Win64",
 				"Development",
-				"C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\baseRTS.uproject",
+				"C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\topDownExampleCPP.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"baseRTS Win64 Development Clean"
+				"topDownExampleCPP Win64 Development Clean"
 			],
 			"type": "shell",
 			"options": {
@@ -147,14 +147,14 @@
 			}
 		},
 		{
-			"label": "baseRTS Win64 Development Clean",
+			"label": "topDownExampleCPP Win64 Development Clean",
 			"group": "build",
 			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
-				"baseRTS",
+				"topDownExampleCPP",
 				"Win64",
 				"Development",
-				"C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\baseRTS.uproject",
+				"C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\topDownExampleCPP.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -164,14 +164,14 @@
 			}
 		},
 		{
-			"label": "baseRTS Win64 Test Build",
+			"label": "topDownExampleCPP Win64 Test Build",
 			"group": "build",
 			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
-				"baseRTS",
+				"topDownExampleCPP",
 				"Win64",
 				"Test",
-				"C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\baseRTS.uproject",
+				"C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\topDownExampleCPP.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -181,19 +181,19 @@
 			}
 		},
 		{
-			"label": "baseRTS Win64 Test Rebuild",
+			"label": "topDownExampleCPP Win64 Test Rebuild",
 			"group": "build",
 			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
-				"baseRTS",
+				"topDownExampleCPP",
 				"Win64",
 				"Test",
-				"C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\baseRTS.uproject",
+				"C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\topDownExampleCPP.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"baseRTS Win64 Test Clean"
+				"topDownExampleCPP Win64 Test Clean"
 			],
 			"type": "shell",
 			"options": {
@@ -201,14 +201,14 @@
 			}
 		},
 		{
-			"label": "baseRTS Win64 Test Clean",
+			"label": "topDownExampleCPP Win64 Test Clean",
 			"group": "build",
 			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
-				"baseRTS",
+				"topDownExampleCPP",
 				"Win64",
 				"Test",
-				"C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\baseRTS.uproject",
+				"C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\topDownExampleCPP.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -218,14 +218,14 @@
 			}
 		},
 		{
-			"label": "baseRTS Win64 Shipping Build",
+			"label": "topDownExampleCPP Win64 Shipping Build",
 			"group": "build",
 			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
-				"baseRTS",
+				"topDownExampleCPP",
 				"Win64",
 				"Shipping",
-				"C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\baseRTS.uproject",
+				"C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\topDownExampleCPP.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -235,19 +235,19 @@
 			}
 		},
 		{
-			"label": "baseRTS Win64 Shipping Rebuild",
+			"label": "topDownExampleCPP Win64 Shipping Rebuild",
 			"group": "build",
 			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
-				"baseRTS",
+				"topDownExampleCPP",
 				"Win64",
 				"Shipping",
-				"C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\baseRTS.uproject",
+				"C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\topDownExampleCPP.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"baseRTS Win64 Shipping Clean"
+				"topDownExampleCPP Win64 Shipping Clean"
 			],
 			"type": "shell",
 			"options": {
@@ -255,14 +255,14 @@
 			}
 		},
 		{
-			"label": "baseRTS Win64 Shipping Clean",
+			"label": "topDownExampleCPP Win64 Shipping Clean",
 			"group": "build",
 			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
-				"baseRTS",
+				"topDownExampleCPP",
 				"Win64",
 				"Shipping",
-				"C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\baseRTS.uproject",
+				"C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\topDownExampleCPP.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -272,14 +272,14 @@
 			}
 		},
 		{
-			"label": "baseRTSEditor Win64 Debug Build",
+			"label": "topDownExampleCPPEditor Win64 Debug Build",
 			"group": "build",
 			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
-				"baseRTSEditor",
+				"topDownExampleCPPEditor",
 				"Win64",
 				"Debug",
-				"C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\baseRTS.uproject",
+				"C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\topDownExampleCPP.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -289,19 +289,19 @@
 			}
 		},
 		{
-			"label": "baseRTSEditor Win64 Debug Rebuild",
+			"label": "topDownExampleCPPEditor Win64 Debug Rebuild",
 			"group": "build",
 			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
-				"baseRTSEditor",
+				"topDownExampleCPPEditor",
 				"Win64",
 				"Debug",
-				"C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\baseRTS.uproject",
+				"C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\topDownExampleCPP.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"baseRTSEditor Win64 Debug Clean"
+				"topDownExampleCPPEditor Win64 Debug Clean"
 			],
 			"type": "shell",
 			"options": {
@@ -309,14 +309,14 @@
 			}
 		},
 		{
-			"label": "baseRTSEditor Win64 Debug Clean",
+			"label": "topDownExampleCPPEditor Win64 Debug Clean",
 			"group": "build",
 			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
-				"baseRTSEditor",
+				"topDownExampleCPPEditor",
 				"Win64",
 				"Debug",
-				"C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\baseRTS.uproject",
+				"C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\topDownExampleCPP.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -326,14 +326,14 @@
 			}
 		},
 		{
-			"label": "baseRTSEditor Win64 DebugGame Build",
+			"label": "topDownExampleCPPEditor Win64 DebugGame Build",
 			"group": "build",
 			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
-				"baseRTSEditor",
+				"topDownExampleCPPEditor",
 				"Win64",
 				"DebugGame",
-				"C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\baseRTS.uproject",
+				"C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\topDownExampleCPP.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -343,19 +343,19 @@
 			}
 		},
 		{
-			"label": "baseRTSEditor Win64 DebugGame Rebuild",
+			"label": "topDownExampleCPPEditor Win64 DebugGame Rebuild",
 			"group": "build",
 			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
-				"baseRTSEditor",
+				"topDownExampleCPPEditor",
 				"Win64",
 				"DebugGame",
-				"C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\baseRTS.uproject",
+				"C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\topDownExampleCPP.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"baseRTSEditor Win64 DebugGame Clean"
+				"topDownExampleCPPEditor Win64 DebugGame Clean"
 			],
 			"type": "shell",
 			"options": {
@@ -363,14 +363,14 @@
 			}
 		},
 		{
-			"label": "baseRTSEditor Win64 DebugGame Clean",
+			"label": "topDownExampleCPPEditor Win64 DebugGame Clean",
 			"group": "build",
 			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
-				"baseRTSEditor",
+				"topDownExampleCPPEditor",
 				"Win64",
 				"DebugGame",
-				"C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\baseRTS.uproject",
+				"C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\topDownExampleCPP.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -380,14 +380,14 @@
 			}
 		},
 		{
-			"label": "baseRTSEditor Win64 Development Build",
+			"label": "topDownExampleCPPEditor Win64 Development Build",
 			"group": "build",
 			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
-				"baseRTSEditor",
+				"topDownExampleCPPEditor",
 				"Win64",
 				"Development",
-				"C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\baseRTS.uproject",
+				"C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\topDownExampleCPP.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -397,19 +397,19 @@
 			}
 		},
 		{
-			"label": "baseRTSEditor Win64 Development Rebuild",
+			"label": "topDownExampleCPPEditor Win64 Development Rebuild",
 			"group": "build",
 			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
-				"baseRTSEditor",
+				"topDownExampleCPPEditor",
 				"Win64",
 				"Development",
-				"C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\baseRTS.uproject",
+				"C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\topDownExampleCPP.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"baseRTSEditor Win64 Development Clean"
+				"topDownExampleCPPEditor Win64 Development Clean"
 			],
 			"type": "shell",
 			"options": {
@@ -417,14 +417,14 @@
 			}
 		},
 		{
-			"label": "baseRTSEditor Win64 Development Clean",
+			"label": "topDownExampleCPPEditor Win64 Development Clean",
 			"group": "build",
 			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
-				"baseRTSEditor",
+				"topDownExampleCPPEditor",
 				"Win64",
 				"Development",
-				"C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\baseRTS.uproject",
+				"C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\topDownExampleCPP.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",

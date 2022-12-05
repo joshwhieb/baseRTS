@@ -2,10 +2,10 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "Launch baseRTS (Debug)",
+			"name": "Launch topDownExampleCPP (Debug)",
 			"request": "launch",
-			"program": "C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
-			"preLaunchTask": "baseRTS Win64 Debug Build",
+			"program": "C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+			"preLaunchTask": "topDownExampleCPP Win64 Debug Build",
 			"args": [
 			],
 			"cwd": "C:\\Program Files\\Epic Games\\UE_5.1",
@@ -18,10 +18,10 @@
 			}
 		},
 		{
-			"name": "Launch baseRTS (DebugGame)",
+			"name": "Launch topDownExampleCPP (DebugGame)",
 			"request": "launch",
-			"program": "C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
-			"preLaunchTask": "baseRTS Win64 DebugGame Build",
+			"program": "C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+			"preLaunchTask": "topDownExampleCPP Win64 DebugGame Build",
 			"args": [
 			],
 			"cwd": "C:\\Program Files\\Epic Games\\UE_5.1",
@@ -34,10 +34,10 @@
 			}
 		},
 		{
-			"name": "Launch baseRTS (Development)",
+			"name": "Launch topDownExampleCPP (Development)",
 			"request": "launch",
-			"program": "C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\Binaries\\Win64\\UnrealGame.exe",
-			"preLaunchTask": "baseRTS Win64 Development Build",
+			"program": "C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\Binaries\\Win64\\UnrealGame.exe",
+			"preLaunchTask": "topDownExampleCPP Win64 Development Build",
 			"args": [
 			],
 			"cwd": "C:\\Program Files\\Epic Games\\UE_5.1",
@@ -50,10 +50,10 @@
 			}
 		},
 		{
-			"name": "Launch baseRTS (Test)",
+			"name": "Launch topDownExampleCPP (Test)",
 			"request": "launch",
-			"program": "C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
-			"preLaunchTask": "baseRTS Win64 Test Build",
+			"program": "C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+			"preLaunchTask": "topDownExampleCPP Win64 Test Build",
 			"args": [
 			],
 			"cwd": "C:\\Program Files\\Epic Games\\UE_5.1",
@@ -66,10 +66,10 @@
 			}
 		},
 		{
-			"name": "Launch baseRTS (Shipping)",
+			"name": "Launch topDownExampleCPP (Shipping)",
 			"request": "launch",
-			"program": "C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
-			"preLaunchTask": "baseRTS Win64 Shipping Build",
+			"program": "C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+			"preLaunchTask": "topDownExampleCPP Win64 Shipping Build",
 			"args": [
 			],
 			"cwd": "C:\\Program Files\\Epic Games\\UE_5.1",
@@ -82,12 +82,12 @@
 			}
 		},
 		{
-			"name": "Launch baseRTSEditor (Debug)",
+			"name": "Launch topDownExampleCPPEditor (Debug)",
 			"request": "launch",
 			"program": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
-			"preLaunchTask": "baseRTSEditor Win64 Debug Build",
+			"preLaunchTask": "topDownExampleCPPEditor Win64 Debug Build",
 			"args": [
-				"C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\baseRTS.uproject"
+				"C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\topDownExampleCPP.uproject"
 			],
 			"cwd": "C:\\Program Files\\Epic Games\\UE_5.1",
 			"stopAtEntry": false,
@@ -99,12 +99,12 @@
 			}
 		},
 		{
-			"name": "Launch baseRTSEditor (DebugGame)",
+			"name": "Launch topDownExampleCPPEditor (DebugGame)",
 			"request": "launch",
 			"program": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
-			"preLaunchTask": "baseRTSEditor Win64 DebugGame Build",
+			"preLaunchTask": "topDownExampleCPPEditor Win64 DebugGame Build",
 			"args": [
-				"C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\baseRTS.uproject"
+				"C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\topDownExampleCPP.uproject"
 			],
 			"cwd": "C:\\Program Files\\Epic Games\\UE_5.1",
 			"stopAtEntry": false,
@@ -116,12 +116,12 @@
 			}
 		},
 		{
-			"name": "Launch baseRTSEditor (Development)",
+			"name": "Launch topDownExampleCPPEditor (Development)",
 			"request": "launch",
 			"program": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
-			"preLaunchTask": "baseRTSEditor Win64 Development Build",
+			"preLaunchTask": "topDownExampleCPPEditor Win64 Development Build",
 			"args": [
-				"C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\baseRTS.uproject"
+				"C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\topDownExampleCPP.uproject"
 			],
 			"cwd": "C:\\Program Files\\Epic Games\\UE_5.1",
 			"stopAtEntry": false,
@@ -140,7 +140,7 @@
 			"args": [
 				"-projectfiles",
 				"-vscode",
-				"-project=C:\\Users\\Josh Hieb\\Documents\\Unreal Projects\\baseRTS\\baseRTS.uproject",
+				"-project=C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\topDownExampleCPP.uproject",
 				"-game",
 				"-engine"
 			],
