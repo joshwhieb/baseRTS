@@ -7,9 +7,11 @@
 
 #include "CameraPlayerController.h"
 #include "CameraPawn.h"
+#include "RTSHUD.h"
 
 AtopDownExampleCPPGameMode::AtopDownExampleCPPGameMode()
 {
     PlayerControllerClass = ACameraPlayerController::StaticClass();
     DefaultPawnClass = ACameraPawn::StaticClass();
+    HUDClass = ARTSHUD::StaticClass();
 }
