@@ -13,5 +13,11 @@ AtopDownExampleCPPGameMode::AtopDownExampleCPPGameMode()
 {
     PlayerControllerClass = ACameraPlayerController::StaticClass();
     DefaultPawnClass = ACameraPawn::StaticClass();
-    HUDClass = ARTSHUD::StaticClass();
+    
+    //HUDClass = ARTSHUD::StaticClass();
+    static ConstructorHelpers::FClassFinder<ARTSHUD> RTSBPClass(TEXT("/Game/TopDown/Blueprints/BP_RTSHUD"));
+    if(RTSBPClass.Class != nullptr){
+        HUDClass = RTSBPClass.Class;
+    }
+
 }

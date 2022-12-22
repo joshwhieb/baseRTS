@@ -3,6 +3,28 @@
 
 #include "RTSHUD.h"
 
+ARTSHUD::ARTSHUD(){
+
+}
+
+void ARTSHUD::BeginPlay(){
+    Super::BeginPlay();
+
+    if(GoldWidgetClass){
+        GoldWidget = CreateWidget<UResourceWidget>(GetWorld(), GoldWidgetClass);
+
+        if(GoldWidget){
+            GoldWidget->AddToViewport();
+        }
+    }
+}
+
+void ARTSHUD::Tick(float DeltaSeconds){
+    Super::Tick(DeltaSeconds);
+
+
+}
+
 void ARTSHUD::DrawHUD(){
     Super::DrawHUD();
 
@@ -32,4 +54,10 @@ FVector2D ARTSHUD::GetMousePos2D(){
     GetOwningPlayerController()->GetMousePosition(posX, posY);
 
     return FVector2D(posX, posY);
+}
+
+void ARTSHUD::UpdateGoldCount(int32 Value){
+    if (GoldWidget){
+        GoldWidget->UpdateGoldCount(Value);
+    }
 }
