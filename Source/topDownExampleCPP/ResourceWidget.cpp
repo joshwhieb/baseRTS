@@ -18,3 +18,9 @@ void UResourceWidget::UpdateGoldCount(int32 Value){
     check(TXTGold != nullptr);
     TXTGold->SetText(FText::FromString("Gold: " + FString::FromInt(Value)));
 }
+
+void UResourceWidget::UpdateWoodCount(int32 Value){
+    check(Value >= 0);
+    check(TXTWood != nullptr);
+    TXTWood->SetText(FText::FromString("Wood: " + FString::FromInt(Value)));
+}

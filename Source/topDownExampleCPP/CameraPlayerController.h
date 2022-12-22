@@ -31,6 +31,9 @@ protected:
 	UPROPERTY()
 	TArray<AtopDownExampleCPPCharacter*> SelectedActors;
 
+	int32 current_gold = 0;
+	int32 current_wood = 0;
+
 	virtual void SetupInputComponent() override;
 
 	UFUNCTION()
@@ -41,5 +44,7 @@ protected:
 
 	UFUNCTION()
 	void SelectionPressed();
+
+
 
 };

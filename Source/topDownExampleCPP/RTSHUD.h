@@ -50,10 +50,13 @@ public:
 	UFUNCTION()
 	void UpdateGoldCount(int32 Value);
 
+	UFUNCTION()
+	void UpdateWoodCount(int32 Value);
+
 	UPROPERTY(EditDefaultsOnly, Category = "Widgets")
-	TSubclassOf<UUserWidget> GoldWidgetClass;
+	TSubclassOf<UUserWidget> ResourceWidgetClass;
 
 private:
 
-	UResourceWidget* GoldWidget;
+	UResourceWidget* ResourceWidget;
 };

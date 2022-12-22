@@ -28,6 +28,8 @@ AtopDownExampleCPPCharacter::AtopDownExampleCPPCharacter()
 	GetCharacterMovement()->bConstrainToPlane = true;
 	GetCharacterMovement()->bSnapToPlaneAtStart = true;
 
+	/*
+	// TODO(jhieb) remove the camera.
 	// Create a camera boom...
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
 	CameraBoom->SetupAttachment(RootComponent);
@@ -40,7 +42,9 @@ AtopDownExampleCPPCharacter::AtopDownExampleCPPCharacter()
 	TopDownCameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("TopDownCamera"));
 	TopDownCameraComponent->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 	TopDownCameraComponent->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
+	*/
 
+	// TODO(Jhieb) get the decal back in so we can highlight the character when selected.
 	// Create a decal in the world to show the cursor's location
 	/*CursorToWorld = CreateDefaultSubobject<UDecalComponent>("CursorToWorld");
 	CursorToWorld->SetupAttachment(RootComponent);
@@ -62,7 +66,7 @@ AtopDownExampleCPPCharacter::AtopDownExampleCPPCharacter()
 void AtopDownExampleCPPCharacter::Tick(float DeltaSeconds)
 {
     Super::Tick(DeltaSeconds);
-
+/* TODO(jhieb) removed.
 	if (UHeadMountedDisplayFunctionLibrary::IsHeadMountedDisplayEnabled())
 	{
 		if (UWorld* World = GetWorld())
@@ -86,4 +90,5 @@ void AtopDownExampleCPPCharacter::Tick(float DeltaSeconds)
 		//CursorToWorld->SetWorldLocation(TraceHitResult.Location);
 		//CursorToWorld->SetWorldRotation(CursorR);
 	}
+*/
 }

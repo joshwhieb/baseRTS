@@ -10,11 +10,11 @@ ARTSHUD::ARTSHUD(){
 void ARTSHUD::BeginPlay(){
     Super::BeginPlay();
 
-    if(GoldWidgetClass){
-        GoldWidget = CreateWidget<UResourceWidget>(GetWorld(), GoldWidgetClass);
+    if(ResourceWidgetClass){
+        ResourceWidget = CreateWidget<UResourceWidget>(GetWorld(), ResourceWidgetClass);
 
-        if(GoldWidget){
-            GoldWidget->AddToViewport();
+        if(ResourceWidget){
+            ResourceWidget->AddToViewport();
         }
     }
 }
@@ -57,7 +57,13 @@ FVector2D ARTSHUD::GetMousePos2D(){
 }
 
 void ARTSHUD::UpdateGoldCount(int32 Value){
-    if (GoldWidget){
-        GoldWidget->UpdateGoldCount(Value);
+    if (ResourceWidget){
+        ResourceWidget->UpdateGoldCount(Value);
+    }
+}
+
+void ARTSHUD::UpdateWoodCount(int32 Value){
+    if (ResourceWidget){
+        ResourceWidget->UpdateWoodCount(Value);
     }
 }

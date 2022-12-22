@@ -5,6 +5,7 @@
 
 #include "Blueprint/AIBlueprintHelperLibrary.h"
 #include "Runtime/Engine/Classes/Components/DecalComponent.h"
+#include "RTSHUD.h"
 #include "HeadMountedDisplayFunctionLibrary.h"
 
 ACameraPlayerController::ACameraPlayerController(){
@@ -68,6 +69,17 @@ void ACameraPlayerController::MoveReleased(){
 	}
 	
 	if (SelectedActors.Num() > 0){
+		
+		// TODO(jhieb) this should live in the character portion I think.
+		ARTSHUD* RTSHud = Cast<ARTSHUD>(GetHUD());
+		check(RTSHud != nullptr);
+		current_gold += 1;
+		RTSHud->UpdateGoldCount(current_gold);
+
+		current_wood += 5;
+		RTSHud->UpdateWoodCount(current_wood);
+		
+		
 		for(int32 i=0; i < SelectedActors.Num(); i++){
 			MoveLocation = Hit.Location + FVector(i / 2 * 100, i % 2 * 100, 0);
 			UAIBlueprintHelperLibrary::SimpleMoveToLocation(SelectedActors[i]->GetController(), MoveLocation);

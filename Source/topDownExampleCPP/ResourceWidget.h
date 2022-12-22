@@ -16,12 +16,18 @@ class TOPDOWNEXAMPLECPP_API UResourceWidget : public UUserWidget
 	GENERATED_BODY()
 	
 public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+	class UTextBlock* TXTGold;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+	class UTextBlock* TXTWood;
+	
+
 	UResourceWidget(const FObjectInitializer& ObjectInitializer);
 
 	virtual void NativeConstruct() override;
 
 	void UpdateGoldCount(int32 Value);
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-	class UTextBlock* TXTGold;
+	void UpdateWoodCount(int32 Value);
 };
