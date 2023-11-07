@@ -6,6 +6,14 @@
 #include "Blueprint/AIBlueprintHelperLibrary.h"
 #include "Runtime/Engine/Classes/Components/DecalComponent.h"
 #include "RTSHUD.h"
+#include "Engine/EngineTypes.h"
+#include "topDownExampleCPPCharacter.h"
+#include "GameFramework/DamageType.h"
+#include "Engine/DamageEvents.h"
+
+// TODO(jhieb) remove just testing for Fdmgevent.
+#include "GameFramework/Character.h"
+
 #include "HeadMountedDisplayFunctionLibrary.h"
 
 ACameraPlayerController::ACameraPlayerController(){
@@ -56,13 +64,77 @@ void ACameraPlayerController::SelectionReleased(){
 
 void ACameraPlayerController::MoveReleased(){
 	
+	
 	FVector MoveLocation;
 	FHitResult Hit;
-	GetHitResultUnderCursor(ECollisionChannel::ECC_Visibility, false, Hit);
+	//GetHitResultUnderCursor(ECollisionChannel::ECC_Visibility, false, Hit);
 	bool bHitSuccessful = false;
-	bHitSuccessful = GetHitResultUnderCursor(ECollisionChannel::ECC_Visibility, true, Hit);
 	
-	// If we hit a surface, cache the location
+	APlayerController* MyPlayerController = UGameplayStatics::GetPlayerController(this, 0); // Get the PlayerController
+	FVector WorldLocation, WorldDirection;
+	MyPlayerController->DeprojectMousePositionToWorld(WorldLocation, WorldDirection);
+
+	FHitResult HitResult; // Store information about the hit
+
+	ECollisionChannel TraceChannel = ECC_Visibility; // You can change the collision channel to match your setup
+
+	// Perform the line trace from the mouse cursor location
+	GetHitResultUnderCursor(ECollisionChannel::ECC_Visibility, true, Hit);
+	AActor* HitActor = Hit.GetActor(); // Get the actor that was hit
+	if (HitActor)
+	{
+		//UE_LOG(LogTemp, Warning, TEXT("HIT SOMETHING"))
+		// Handle the hit actor here
+		AtopDownExampleCPPCharacter* villager_actor = Cast<AtopDownExampleCPPCharacter>(HitActor);
+		if(villager_actor != nullptr){
+			FDamageEvent DamageEvent;
+			float DmgTaken = villager_actor->TakeDamage(10, DamageEvent, this, villager_actor); 
+		}
+	}
+	
+	// Now, draw a debug line to visualize the trace
+	FVector StartLocation = MyPlayerController->PlayerCameraManager->GetCameraLocation();
+	FVector EndLocation = Hit.ImpactPoint;
+
+	// Draw the debug line
+	DrawDebugLine(
+		GetWorld(),
+		StartLocation,
+		EndLocation,
+		FColor(255, 0, 0), // Line color (red in this example)
+		false, // Persistent (false for a one-time debug line)
+		1, // Line thickness
+		0, // Depth priority
+		100 // Duration (set to 1 to display for one frame)
+	);
+	UE_LOG(LogTemp, Warning, TEXT("StartLocation: %s, EndLocation: %s"), *StartLocation.ToString(), *EndLocation.ToString());
+	/*
+	
+	bHitSuccessful = GetHitResultUnderCursor(ECollisionChannel::ECC_Visibility, true, Hit);
+	//GetHitResultUnderCursorByChannel()
+	AActor* hit_actor = Cast<AtopDownExampleCPPCharacter>(Hit.GetActor());
+	FVector MousePosition;
+	GetMousePosition(MousePosition.X, MousePosition.Y);
+	FVector WorldLocation;
+	DeprojectMousePositionToWorld(MousePosition, WorldLocation);
+
+	GetWorld()->
+
+	// TODO(jhieb) this shouldn't happen in the controller it should be done by the selected character(s).
+	if(hit_actor != nullptr){
+		// figure out the type of actor.
+		// TODO(Jhieb) is there a more foolproof way of getting the actor type?
+		AtopDownExampleCPPCharacter* villager_actor = Cast<AtopDownExampleCPPCharacter>(hit_actor);
+		if(villager_actor != nullptr){
+			int dmg = 10;
+			FVector shotDirection;
+
+			// TODO(jhieb) kind of fudging the parameters ATM.  The actor that caused dmg needs to be figured out.
+			//FPointDamageEvent DamageEvent(10, Hit, rotation, shotDirection, nullptr);
+			//float DmgTaken = villager_actor->TakeDamage(10, FDamageEvent(), this, villager_actor); 
+		}
+	}*/
+
 	if (bHitSuccessful)
 	{
 		CachedDestination = Hit.Location;

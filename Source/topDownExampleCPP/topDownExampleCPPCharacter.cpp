@@ -61,11 +61,16 @@ AtopDownExampleCPPCharacter::AtopDownExampleCPPCharacter()
 	// Activate ticking in order to update the cursor every frame.
 	PrimaryActorTick.bCanEverTick = true;
 	PrimaryActorTick.bStartWithTickEnabled = true;
+
+	Health = MaxHealth;
 }
 
 void AtopDownExampleCPPCharacter::Tick(float DeltaSeconds)
 {
     Super::Tick(DeltaSeconds);
+
+	// TODO(jhieb) check every tick if an *enemy* character is in range.  If so then attack them or aggro towards them?
+
 /* TODO(jhieb) removed.
 	if (UHeadMountedDisplayFunctionLibrary::IsHeadMountedDisplayEnabled())
 	{
@@ -92,3 +97,18 @@ void AtopDownExampleCPPCharacter::Tick(float DeltaSeconds)
 	}
 */
 }
+
+
+float AtopDownExampleCPPCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser){
+	float DamageApplied = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
+	Health -= DamageApplied;
+
+	//if(Health <= 0){
+		// TODO(jhieb) the actor needs to die.
+	//}
+
+	UE_LOG(LogTemp, Warning, TEXT("HIT SOMETHING"));
+
+	return DamageApplied;
+}
+

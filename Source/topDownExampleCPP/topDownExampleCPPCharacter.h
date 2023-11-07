@@ -13,8 +13,11 @@ class AtopDownExampleCPPCharacter : public ACharacter
 
 public:
 	// TODO(jhieb) toggleable health bar above character?
-	int16 health = 100;
+	UPROPERTY()
+	int16 MaxHealth = 100;
 	
+	UPROPERTY(VisibleAnywhere)
+	float Health;
 	
 	AtopDownExampleCPPCharacter();
 
@@ -30,6 +33,8 @@ public:
 	/** Returns CursorToWorld subobject **/
 	//FORCEINLINE class UDecalComponent* GetCursorToWorld() { return CursorToWorld; }
 
+	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
+
 private:
 	/** Top down camera */
 	//UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
@@ -43,5 +48,7 @@ private:
 	/** A decal that projects to the cursor location. */
 	//UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	//class UDecalComponent* CursorToWorld;
+
+	
 };
 

@@ -1,5 +1,21 @@
 [
 	{
+		"file": "C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\Source\\topDownExampleCPP\\CameraPawn.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\.vscode\\compileCommands_Default\\topDownExampleCPP.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\Source\\topDownExampleCPP\\CameraPawn.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\.vscode\\compileCommands_Default\\topDownExampleCPP.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
 		"file": "C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\Source\\topDownExampleCPP\\CameraPlayerController.cpp",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\cl.exe",
@@ -25,6 +41,22 @@
 	},
 	{
 		"file": "C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\Source\\topDownExampleCPP\\RTSHUD.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\.vscode\\compileCommands_Default\\topDownExampleCPP.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\Source\\topDownExampleCPP\\ResourceWidget.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\.vscode\\compileCommands_Default\\topDownExampleCPP.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\Source\\topDownExampleCPP\\ResourceWidget.h",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\cl.exe",
 			"@C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\.vscode\\compileCommands_Default\\topDownExampleCPP.255.rsp"
@@ -81,22 +113,6 @@
 	},
 	{
 		"file": "C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\Source\\topDownExampleCPP\\topDownExampleCPPGameMode.h",
-		"arguments": [
-			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\cl.exe",
-			"@C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\.vscode\\compileCommands_Default\\topDownExampleCPP.255.rsp"
-		],
-		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
-	},
-	{
-		"file": "C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\Source\\topDownExampleCPP\\topDownExampleCPPPlayerController.cpp",
-		"arguments": [
-			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\cl.exe",
-			"@C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\.vscode\\compileCommands_Default\\topDownExampleCPP.255.rsp"
-		],
-		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
-	},
-	{
-		"file": "C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\Source\\topDownExampleCPP\\topDownExampleCPPPlayerController.h",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\cl.exe",
 			"@C:\\Users\\Josh Hieb\\Documents\\GitHub\\baseRTS\\.vscode\\compileCommands_Default\\topDownExampleCPP.255.rsp"
