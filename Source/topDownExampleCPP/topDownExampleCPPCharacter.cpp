@@ -103,9 +103,10 @@ float AtopDownExampleCPPCharacter::TakeDamage(float DamageAmount, struct FDamage
 	float DamageApplied = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 	Health -= DamageApplied;
 
-	//if(Health <= 0){
-		// TODO(jhieb) the actor needs to die.
-	//}
+	if(Health <= 0){
+		// the actor needs to die.
+		this->Destroy();
+	}
 
 	UE_LOG(LogTemp, Warning, TEXT("HIT SOMETHING"));
 

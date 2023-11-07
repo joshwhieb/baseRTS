@@ -18,7 +18,6 @@ public:
 	
 	UPROPERTY(VisibleAnywhere)
 	float Health;
-	
 	AtopDownExampleCPPCharacter();
 
 	// Called every frame.
@@ -34,6 +33,8 @@ public:
 	//FORCEINLINE class UDecalComponent* GetCursorToWorld() { return CursorToWorld; }
 
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
+
+	
 
 private:
 	/** Top down camera */
